@@ -1,5 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Protest+Riot&display=swap');
 
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   display: flex;
+  height: 100vh;
+}
+
+.image-sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 1 2 auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 3 1 auto;
+}
+
+.content p {
+  max-width: 400px;
 }
