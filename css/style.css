@@ -19,7 +19,7 @@ body {
   flex-direction: column;
   flex: 1 2 auto;
   justify-content: space-between;
-  background: no-repeat center url("../img/duck_bg.jpg");
+  background: no-repeat 55% url("../img/duck_bg.jpg");
 }
 
 .logo-area {
