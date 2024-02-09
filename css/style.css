@@ -81,6 +81,29 @@ body {
     button {
       margin: 0 3vw 3vh;
     }
+
+    & button {
+      padding: 15px 40px;
+
+      font-weight: 700;
+
+      color: #FFF;
+      background-color: #2c4f3f;
+
+      border: none;
+      border-radius: 8px;
+      box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 6px;
+
+      transition: all 200ms;
+    }
+
+    & button:hover {
+      background-color: #7c8c7d;
+    }
+
+    & button:active {
+      box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 6px;
+    }
   }
 
   & p {
@@ -88,6 +111,16 @@ body {
     font-weight: 700;
     font-size: 1.4rem;
     margin-top: 0;
+
+    & a {
+      color: #2c4f3f;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    & a:hover {
+      color: #7c8c7d;
+    }
   }
 
   & p:last-child {
@@ -132,6 +165,8 @@ body {
 
     border: 2px solid #e6e6e6;
     border-radius: 4px;
+
+    transition: all 200ms;
   }
 
   & input:focus {
