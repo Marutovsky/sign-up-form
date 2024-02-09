@@ -14,6 +14,7 @@ body {
   height: 100vh;
 
   background-color: #f5f5f5;
+  color: #323332;
 }
 
 .image-sidebar {
@@ -73,6 +74,7 @@ body {
   }
 
   & form {
+    font-family: "Montserrat", sans-serif;
     margin: 0;
 
     & p,
@@ -94,12 +96,51 @@ body {
   }
 }
 
-.form-inputs {
+.form-background {
   background-color: #FFF;
   padding: 3vh 3vw;
   margin-bottom: 3vh;
+  box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 6px 1px;
   & h2 {
     margin: 0;
     margin-bottom: 3vh;
+    font-weight: 600;
+  }
+}
+
+.form-inputs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin: 2vh 8vw 2vh 0;
+  & label {
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+
+  & input {
+    max-width: 300px;
+    padding: 6px;
+
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    border: 2px solid #e6e6e6;
+    border-radius: 4px;
+  }
+
+  & input:focus {
+    outline: none;
+    border: 2px solid #7c8c7d;
+    box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 6px;
+  }
+
+  & input:invalid {
+    border: 2px solid #d48f57;
   }
 }
