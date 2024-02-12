@@ -166,7 +166,8 @@ body {
     font-size: 0.8rem;
   }
 
-  & input {
+  & input,
+    input.unfilled:required {
     max-width: 300px;
     padding: 6px;
 
@@ -179,13 +180,13 @@ body {
     transition: all 200ms;
   }
 
+  & input:invalid {
+    border: 2px solid var(--orange-main);
+  }
+
   & input:focus {
     outline: none;
     border: 2px solid var(--green-lighter);
     box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 6px;
-  }
-
-  & input:invalid {
-    border: 2px solid var(--orange-main);
   }
 }
