@@ -184,7 +184,8 @@ body {
     border: 2px solid var(--orange-main);
   }
 
-  & input:focus {
+  & input:focus,
+    input.unfilled:focus {
     outline: none;
     border: 2px solid var(--green-lighter);
     box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 6px;
