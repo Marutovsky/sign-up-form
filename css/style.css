@@ -108,6 +108,7 @@ body {
 
     & button:hover {
       background-color: var(--green-darker);
+      cursor: pointer;
     }
 
     & button:active {
