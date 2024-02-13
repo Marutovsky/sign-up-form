@@ -180,7 +180,8 @@ body {
     transition: all 200ms;
   }
 
-  & input:invalid {
+  & input:invalid,
+    .invalid {
     border: 2px solid var(--orange-main);
   }
 
