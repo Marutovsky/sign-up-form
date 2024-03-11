@@ -154,12 +154,15 @@ body {
 .form-inputs {
   display: flex;
   flex-wrap: wrap;
+  margin-right: 20%;
 }
 
 .form-row {
   display: flex;
   flex-direction: column;
   margin: 2vh 8vw 2vh 0;
+  flex: 1;
+
   & label {
     letter-spacing: 0.1rem;
     font-weight: 600;
@@ -190,5 +193,63 @@ body {
     outline: none;
     border: 2px solid var(--green-lighter);
     box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 6px;
+  }
+}
+
+.form-row:nth-child(n+5) {
+  margin-bottom: 3px;
+}
+
+#password-caption {
+  margin: 0;
+  font-size: 0.8rem;
+  width: 55%;
+  margin-right: auto;
+  color: var(--orange-main);
+}
+
+@media only screen and (min-width: 1590px) {
+  .form-row:nth-child(even){
+    margin-right: 16vw;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .form-inputs {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 948px) {
+  body {
+    flex-direction: column;
+  }
+
+  .logo-area {
+    margin-top: 5vh;
+  }
+
+  .content {
+    padding-top: 3vh;
+  }
+
+  .form-row:nth-child(even){
+    margin-right: 16vw;
+  }
+}
+
+@media only screen and (max-width: 605px) {
+  .form-row:nth-child(even) {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #password-caption {
+    width: 100%;
+  }
+
+  .form-row {
+    margin-right: 0;
   }
 }
